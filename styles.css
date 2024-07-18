@@ -280,3 +280,160 @@ nav ul li {
     }
 }
 
+
+/* Media Query for Mobile (max-width: 600px) */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    .section1,
+    .section2 {
+        flex-wrap: wrap;
+    }
+
+    .section1 .text,
+    .section1 .image,
+    .section2 .grid-container,
+    .section2 .text {
+        flex: 1 1 100%;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .section1 .text h1,
+    .section2 .text .center {
+        font-size: 2em;
+    }
+
+    .section1 .text p,
+    .section2 .text p {
+        width: auto;
+        padding: 0 20px;
+        font-size: 16px;
+    }
+
+    .section1 .text button,
+    .section2 .text button {
+        padding: 10px 30px;
+        font-size: 14px;
+    }
+
+    .section1 .image {
+        height: auto;
+    }
+
+    .section2 .grid-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .section2 .grid-item {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Media Query for Tablet (min-width: 601px) and (max-width: 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    .section1,
+    .section2 {
+        flex-wrap: wrap;
+    }
+
+    .section1 .text,
+    .section1 .image,
+    .section2 .grid-container,
+    .section2 .text {
+        flex: 1 1 100%;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .section1 .text h1,
+    .section2 .text .center {
+        font-size: 2.5em;
+    }
+
+    .section1 .text p,
+    .section2 .text p {
+        width: auto;
+        padding: 0 20px;
+        font-size: 18px;
+    }
+
+    .section1 .text button,
+    .section2 .text button {
+        padding: 10px 40px;
+        font-size: 16px;
+    }
+
+    .section1 .image {
+        height: auto;
+    }
+
+    .section2 .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .section2 .grid-item {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Media Query for Laptop (min-width: 1025px) */
+@media (min-width: 1025px) {
+    nav ul {
+        flex-direction: row;
+    }
+
+    .section1,
+    .section2 {
+        flex-wrap: nowrap;
+    }
+
+    .section1 .text,
+    .section1 .image,
+    .section2 .grid-container,
+    .section2 .text {
+        flex: 1;
+        text-align: left;
+        padding: 0;
+    }
+
+    .section1 .text h1,
+    .section2 .text .center {
+        font-size: 3em;
+    }
+
+    .section1 .text p,
+    .section2 .text p {
+        width: 600px;
+        padding: 0;
+        font-size: 18px;
+    }
+
+    .section1 .text button,
+    .section2 .text button {
+        padding: 15px 60px;
+        font-size: 18px;
+    }
+
+    .section1 .image {
+        height: 700px;
+    }
+
+    .section2 .grid-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .section2 .grid-item {
+        width: 100%;
+        height: auto;
+    }
+}
+
